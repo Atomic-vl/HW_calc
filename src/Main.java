@@ -112,6 +112,9 @@ public class Main {
         };
         if (arabNumber < 0) {
             throw new RuntimeException("В вычислениях с римскими числами ответ не может быть отрицательным!");
+        } else if (arabNumber == 0) {
+            throw new RuntimeException("В вычислениях с римскими числами не может быть 0, его тогда просто не существовало:)");
+
         }
         return romanNumbers[arabNumber];
     }
